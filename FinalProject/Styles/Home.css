@@ -1,0 +1,69 @@
+﻿/*query for displaying content on computer*/
+@media screen and (min-width: 320px)
+
+.header{
+    font-family: Cambria;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+}
+
+#paragraphBelowHeader{
+    font-family: Calibri;
+    font-size: 12px;
+    font-style: italic;
+    text-align: left;
+}
+
+#body{
+    font-family: Calibri;
+    font-size: 12px;
+    font-style: normal;
+    width: 520px;
+    padding: 25px;
+}
+
+#mainContainer{
+    border: 2px solid;
+    border-radius: 25px;
+    padding: 25px;
+}
+
+footer{
+    display: inline-block;
+}
+
+button{
+    border: 1px medium;
+    border-radius: 10px;
+}
+
+
+
+/*query for displaying content on iPhone*/
+@media only screen and (max-width: 320) {
+    width:100%;
+   }           
+
+
+/*to hide left div - Attempt 1
+.LeftTopDiv {
+    visibility: invisible;
+}
+
+.LeftBottomDiv{
+    visibility: invisible;
+}
+*/
+
+
+/*to hide left div - Attempt 2
+.visuallyhidden{
+    position: aboslute;
+    overflow: hudden;
+    clip: rect(0 0 0 0 );
+    height: 1px; width 1px;
+    margin: -1px; padding: 0; border: 0
+}
+
+    */

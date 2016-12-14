@@ -1,0 +1,81 @@
+﻿@model FinalProject.Models.HomeViewModel
+
+<html>
+
+<head>
+    <link href="~/Styles/Home.css" rel="stylesheet" />
+    <title>Tri-C Log In</title>
+
+</head>
+
+<body>
+    <script src="~/Scripts/jquery-2.1.1.min.js"></script>
+    <script src="~/Scripts/jquery-ui.min.js"></script>
+    <script src="~/Scripts/Home.js"></script>
+
+<header>
+    <h2>Welcome to Cuyahoga Community College Student Services Online</h2> 
+</header>
+   
+
+
+        <div class="home">
+            <p id="paragraphBelowHeader">
+                Cuyahoga Community College recognizes students' rights to access personal and academic records
+                in accordance with the Family Educational Rights and Privacy Act of 1974 (FERPA) as amended by
+                Public Law 93-568.
+            </p>
+        </div>
+
+ <div id="mainContainer" class="mainContainer">
+     
+     <!--Not displaying correctly
+        <left div id="topLeftDiv">
+           Already have an account with us?  Returning users may log in using their site username and password.
+        </left>
+   -->
+
+
+    <div id="logInContainer">
+       
+            <h3>Log In</h3>
+            Username: <input id="username" type="text" placeholder="Username"><br />
+            Password: <input id="password" type="text" placeholder="Password"><br />
+            <div id="login">
+                <button>Log In</button>
+            </div>
+                
+        <div id="LogInMessageDisplay"></div>
+        <hr>
+        
+
+    <div id = "createAccountContainer">
+       
+ <!--Not displaying correctly 
+        <left div id="topBottomDiv">
+         New Users, please create a new account by providing us with some basic information.
+        </left>
+ -->
+         <h3>Create New Account</h3>
+        
+            Username: <input id="username" type="text" placeholder="Username" /><br />
+            Password: <input id="password" type="text" placeholder="Password" /><br />
+            E-Mail Address: <input id="emailAdd" type="text" placeholder="Email Address" /><br />
+            Repeat E-Mail Address: <input id="emailCon" type="text" placeholder="Repeat Email Address" /><br />
+            <button id="btnCreateAccount" onclick="CreateAccount()">Create Account</button>
+       
+        <div id="CreateAccountMessageDisplay"></div> 
+ </div>
+</div>
+</div>
+
+</body>
+
+</html>
+
+<footer>
+    <p>Cuyahoga Community College</p>
+    <p>700 Carnegie Avenue, Cleveland, OH 44115</p>
+</footer>
+
+
